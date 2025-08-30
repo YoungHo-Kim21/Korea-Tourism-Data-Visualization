@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #공공데이터포털에서 방한 외국인 통계 DF로 만들기
-statistics = pd.read_excel("/sta_travelKorea.xlsx") 
+statistics = pd.read_excel("/content/sta_travelKorea.xlsx",sheet_name='방한 외래관광객') 
 
 #numpy배열로 만들어서 1~4행 결측값 제거
 new_ar = np.array(statistics.iloc[5:55,0]) 
